@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4121e5a-4ab4-42a5-8234-17256ffb35d7" name="Default" comment="Second commit from PyCharm">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dir1/.gitignore" afterPath="" />
+    <list default="true" id="b4121e5a-4ab4-42a5-8234-17256ffb35d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poc.iws" />
@@ -328,7 +327,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455722784843</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fourth commit from PyCharm">
+      <created>1455722802524</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455722802524</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,7 +376,8 @@
     <MESSAGE value="Second commit from PyCharm" />
     <MESSAGE value="Commit in file3" />
     <MESSAGE value="Third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third commit" />
+    <MESSAGE value="fourth commit from PyCharm" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit from PyCharm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
