@@ -21,13 +21,13 @@ Por poner el “problema” en contexto, digamos que tenemos una lista de
 números y queremos obtener una lista con los cuadrados de estos números.
 Una aproximación imperativa podría ser la siguiente:
 ```python
-numbers = [2, 3, 4, 5,6\]
+numbers = [2, 3, 4, 5,6]
 squared = []
 for n in numbers:
 squared.append(n**2)
 print(squared)
 ```
-> [4, 9, 16, 25, 36\]
+> [4, 9, 16, 25, 36]
 
 Es decir, en todo momento controlamos nosotros el flujo de las
 operaciones, diciendo exactamente como queremos que se realicen las
@@ -132,7 +132,7 @@ Veamos un par de ejemplos
     ```python
     functools.reduce(operator.add, [1, 2, 3, 4, 5])
     ```
-    > \#15
+    > #15
 
 2.  Hallar el máximo o el mínimo de un conjunto de valores
 
