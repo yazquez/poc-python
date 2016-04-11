@@ -27,7 +27,7 @@ for n in numbers:
 squared.append(n**2)
 print(squared)
 ```
-> \# \[4, 9, 16, 25, 36\]
+> [4, 9, 16, 25, 36\]
 
 Es decir, en todo momento controlamos nosotros el flujo de las
 operaciones, diciendo exactamente como queremos que se realicen las
@@ -35,8 +35,8 @@ operaciones.
 
 Usando map el código nos quedaría de la siguiente forma:
 ```python
-numbers = \[1, 2, 3, 4, 5\]
-def sqr(x): return x \*\* 2
+numbers = [1, 2, 3, 4, 5]
+def sqr(x): return x ** 2
 squared = list(map(sqr, numbers))
 ```
 (Nótese que hacemos un cast al tipo list dado que la función map
@@ -51,11 +51,11 @@ crear una función anónima usando una expresión lambda que sustituya al
 código de la función. La sintaxis de las expresiones lambda es muy
 simple:
 
-> lambda argument\_list: expression 
+> lambda argument_list: expression 
 
 Así pues, nuestro código quedaría:
 ```python
-squared = list(map(lambda x: x\*\*2, numbers))
+squared = list(map(lambda x: x**2, numbers))
 ```
 También podemos obtener este resultado usando listas por compresión
 ```python
@@ -66,11 +66,11 @@ que suministrar a map tandas secuencias como parámetros reciba dicha
 función, por ejemplo:
 ```python
 def sum(a, b): return a+b
-list(map(sum,\[1,2,3\],\[2,4,8\]))
+list(map(sum,[1,2,3],[2,4,8]))
 ```
 Usando lambda:
 ```python
-list(map(lambda a, b: a+b, \[1,2,3\], \[2,4,8\]))
+list(map(lambda a, b: a+b, [1,2,3], [2,4,8]))
 ```
 
 Usando compresión, en este caso tendremos que apoyarnos la función zip
@@ -118,19 +118,19 @@ Veamos un par de ejemplos
 
 1.  Sumar los elementos de una lista
     ```python
-    reduce((lambda x, y: x + y), \[1, 2, 3, 4, 5\])
+    reduce((lambda x, y: x + y), [1, 2, 3, 4, 5])
     ```
     > #15
     
     ```python
-    reduce((lambda x, y: x + y), \['a', 'e', 'i', 'o', 'u'\])
+    reduce((lambda x, y: x + y), ['a', 'e', 'i', 'o', 'u'])
     ```
     > #aeiou
     
     En este caso, suma de elementos, podemos optar por usar directamente uno
     de los operadores incluidos por defecto.
     ```python
-    functools.reduce(operator.add, \[1, 2, 3, 4, 5\])
+    functools.reduce(operator.add, [1, 2, 3, 4, 5])
     ```
     > \#15
 
@@ -138,11 +138,11 @@ Veamos un par de ejemplos
 
     Máximo
     ```python
-    reduce(lambda a,b: a if a&gt;b else b, \[1,4,6,2,9,0\])
+    reduce(lambda a,b: a if a&gt;b else b, [1,4,6,2,9,0])
     ```
     Mínimo
     ```python
-    reduce(lambda a,b: a if a&lt;b else b, \[1,4,6,2,9,0\])
+    reduce(lambda a,b: a if a&lt;b else b, [1,4,6,2,9,0])
     ```
 
 Conclusión
